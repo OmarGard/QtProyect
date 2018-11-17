@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menu</class>
+ <widget class="QMainWindow" name="menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Menu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/recursos/menuicon.ico</normaloff>:/icons/recursos/menuicon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{		
+	border:2px;
+	background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 0, 255), stop:0.05 rgba(14, 8, 73, 255), stop:0.36 rgba(28, 17, 145, 255), stop:0.6 rgba(126, 14, 81, 255), stop:0.75 rgba(234, 11, 11, 255), stop:0.79 rgba(244, 70, 5, 255), stop:0.86 rgba(255, 136, 0, 255), stop:0.935 rgba(239, 236, 55, 255));
+}</string>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMedicos">
+    <property name="title">
+     <string>Medicos</string>
+    </property>
+    <widget class="QMenu" name="menuConsulta">
+     <property name="title">
+      <string>Consulta</string>
+     </property>
+     <addaction name="actionGeneral"/>
+     <addaction name="actionEspecialista"/>
+    </widget>
+    <addaction name="actionAgregar"/>
+    <addaction name="actionModificar"/>
+    <addaction name="actionEliminar"/>
+    <addaction name="menuConsulta"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuPacientes">
+    <property name="title">
+     <string>Pacientes</string>
+    </property>
+    <addaction name="actionAgregar_2"/>
+    <addaction name="actionModificar_2"/>
+    <addaction name="actionEliminar_2"/>
+    <addaction name="actionConsultar"/>
+   </widget>
+   <widget class="QMenu" name="menuCitas">
+    <property name="title">
+     <string>Citas</string>
+    </property>
+    <widget class="QMenu" name="menuConsultar">
+     <property name="title">
+      <string>Consultar</string>
+     </property>
+     <addaction name="actionPor_fecha"/>
+     <addaction name="actionPor_medico"/>
+    </widget>
+    <addaction name="actionAgregar_3"/>
+    <addaction name="actionModificar_3"/>
+    <addaction name="actionEliminar_3"/>
+    <addaction name="menuConsultar"/>
+   </widget>
+   <addaction name="menuMedicos"/>
+   <addaction name="menuPacientes"/>
+   <addaction name="menuCitas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAgregar">
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionModificar">
+   <property name="text">
+    <string>Modificar</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+  <action name="actionGeneral">
+   <property name="text">
+    <string>General</string>
+   </property>
+  </action>
+  <action name="actionEspecialista">
+   <property name="text">
+    <string>Especialista</string>
+   </property>
+  </action>
+  <action name="actionAgregar_2">
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionModificar_2">
+   <property name="text">
+    <string>Modificar</string>
+   </property>
+  </action>
+  <action name="actionEliminar_2">
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+  <action name="actionConsultar">
+   <property name="text">
+    <string>Consultar</string>
+   </property>
+  </action>
+  <action name="actionAgregar_3">
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionModificar_3">
+   <property name="text">
+    <string>Modificar</string>
+   </property>
+  </action>
+  <action name="actionEliminar_3">
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+  <action name="actionPor_fecha">
+   <property name="text">
+    <string>Por fecha</string>
+   </property>
+  </action>
+  <action name="actionPor_medico">
+   <property name="text">
+    <string>Por medico</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
